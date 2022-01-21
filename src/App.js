@@ -84,7 +84,7 @@ class App extends Component {
       );
     }
 
-    // ...não retorna nada
+    // ...não exibi nada
     return null;
   }
 
@@ -98,7 +98,7 @@ class App extends Component {
         </Button>
       );
     }
-    // ...else render nothing
+    // ...não exibi nada
     return null;
   }
 
@@ -109,7 +109,7 @@ class App extends Component {
     if (currentStep > 2) {
       return <Button className="button" color="primary float-right">Enviar</Button>;
     }
-    // ...else render nothing
+    // ...não exibi nada
     return null;
   }
 
