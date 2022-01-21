@@ -28,7 +28,8 @@ class App extends Component {
       own_building: "",
       commercial_phone: "",
       commercial_cell: "",
-      email: ""
+      email: "",
+      ramo: ""
     };
 
     // Bind the submission to handleChange()

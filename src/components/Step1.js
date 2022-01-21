@@ -78,6 +78,19 @@ const Step1 = (props) => {
               onChange={props.handleInputChange}
               value={props.email}
             />
+            <span className="space"></span>
+            <select
+              type="ramo"
+              placeholder="Ramo de atividades"
+              id="ramo"
+              name="ramo"
+              onChange={props.handleInputChange} >
+              <option value="volvo">- Selecione uma Opção - </option>
+              <option value="volvo">Padaria</option>
+              <option value="saab">Comercio</option>
+              <option value="opel">Supermercado</option>
+              <option value="audi">Restaurante</option>
+            </select>
           </div>
         </div>
       </FormGroup>
