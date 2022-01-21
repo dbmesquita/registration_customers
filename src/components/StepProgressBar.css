@@ -1,0 +1,34 @@
+
+
+
+.indexedStep {
+    color: white;
+    font-weight: bold;
+    width: 35px;
+    height: 35px;
+    font-size: 15px;
+    background-color: #004293;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  .indexedStep.accomplished {
+    background-color: #2D9A2E ;
+  }
+  
+
+  .step-stage{
+    flex-direction: row;
+    text-align: center;
+    margin-top: 75px;
+    position: absolute;
+  }
+  .stage {
+    color: #004293;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+  

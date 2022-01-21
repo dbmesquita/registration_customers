@@ -1,38 +1,116 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #f1f1f1;
+}
+
 .App {
+  font-family: sans-serif;
+  /*text-align: center;*/
+}
+
+.head {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin-bottom: 16px;
+  background: #fff;
+  padding: 0;
+  display: block;
+  margin: 0 auto;
+  border-radius: 18px;
+  box-shadow: 8px 8px 24px #ccc;
+  width: 80%;
+  position: relative;
+  overflow: hidden;
+}
+
+.form input {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 100%;
+  height: 48px;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.fields-container {
+  padding: 24px 24px 40px;
+  width: 100%;
+}
+
+.field {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.space{
+  padding-left: 15px;
+}
+
+
+.field-step {
+  margin-bottom: 60px;
+  margin-top: 20px;
+  margin-right: 60px;
+  margin-left: 65px;
+
+}
+
+
+
+
+.button {
+  background-color: #2D9A2E;
+  display: inline-block;
+  font-weight: bold;
+  width: 90px;
+  font-size: 13px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #fff;
+  outline: none;
+  border: 0px;
+  padding: 10px;
+}
+
+.button:hover {
+  background-color: #3e8e41
+}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+.button-container {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+
+
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  align-items: center;
+  margin: 0;
+  overflow: hidden;
 }
