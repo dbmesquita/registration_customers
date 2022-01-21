@@ -84,7 +84,7 @@ class App extends Component {
       );
     }
 
-    // ...else return nothing
+    // ...não retorna nada
     return null;
   }
 
