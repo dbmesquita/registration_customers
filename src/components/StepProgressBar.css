@@ -1,6 +1,3 @@
-
-
-
 .indexedStep {
     color: white;
     font-weight: bold;
@@ -19,7 +16,6 @@
     background-color: #2D9A2E ;
   }
   
-
   .step-stage{
     flex-direction: row;
     text-align: center;
