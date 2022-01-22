@@ -71,6 +71,7 @@ class App extends Component {
       currentStep: currentStep
     });
   }
+  
 
   // Funções para botons avançar e voltar
   get previousButton() {
