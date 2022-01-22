@@ -88,14 +88,11 @@ body {
   transform: translateY(4px);
 }
 
-
 .button-container {
   display: flex;
   padding: 10px;
   justify-content: space-between;
 }
-
-
 
 .loader {
   position: absolute;
@@ -110,3 +107,4 @@ body {
   margin: 0;
   overflow: hidden;
 }
+/*fim*/
