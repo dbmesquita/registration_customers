@@ -10,7 +10,7 @@ class App extends Component {
   constructor(props) {
     super(props);
 
-    // Set the intiial input values
+    // Valor inicial
     this.state = {
       currentStep: 1,
       index: "",
