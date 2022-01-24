@@ -73,7 +73,7 @@ const Step1 = (props) => {
             <input className="inputLabel"
               type="email"
               placeholder="Digite seu E-mail"
-              id="email"
+              id="text"
               name="email"
               onChange={props.handleInputChange}
               value={props.email}
@@ -81,12 +81,11 @@ const Step1 = (props) => {
             <span className="space"></span>
             <select className="inputSelect"
               type="ramo"
-              placeholder="Ramo de atividades"
               id="ramo"
               name="ramo"
               onChange={props.handleInputChange} required>
               <optgroup label="- Selecione uma das Opções -">
-                <option value="" disabled selected hidden > ramo</option>
+                <option value="" disabled selected hidden >Ramo de atividades</option>
                 <option value="Padaria">Padaria</option>
                 <option value="Comercio">Comercio</option>
                 <option value="Supermercado">Supermercado</option>
