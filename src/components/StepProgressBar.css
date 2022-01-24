@@ -1,5 +1,4 @@
-
-
+/*step progress*/
 
 .indexedStep {
     color: white;
@@ -19,7 +18,6 @@
     background-color: #2D9A2E ;
   }
   
-
   .step-stage{
     flex-direction: row;
     text-align: center;

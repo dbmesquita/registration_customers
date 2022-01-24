@@ -66,7 +66,6 @@ select:required:invalid {
   padding-left: 15px;
 }
 
-
 .field-step {
   margin-bottom: 60px;
   margin-top: 20px;
@@ -74,9 +73,6 @@ select:required:invalid {
   margin-left: 65px;
 
 }
-
-
-
 
 .button {
   background-color: #2D9A2E;
@@ -103,14 +99,11 @@ select:required:invalid {
   transform: translateY(4px);
 }
 
-
 .button-container {
   display: flex;
   padding: 10px;
   justify-content: space-between;
 }
-
-
 
 .loader {
   position: absolute;
@@ -125,3 +118,4 @@ select:required:invalid {
   margin: 0;
   overflow: hidden;
 }
+/*fim*/

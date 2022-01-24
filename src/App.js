@@ -10,7 +10,7 @@ class App extends Component {
   constructor(props) {
     super(props);
 
-    // Set the intiial input values
+    // Valor inicial
     this.state = {
       currentStep: 1,
       index: "",
@@ -71,8 +71,9 @@ class App extends Component {
       currentStep: currentStep
     });
   }
+  
 
-  // The "next" and "previous" button functions
+  // Funções para botons avançar e voltar
   get previousButton() {
     let currentStep = this.state.currentStep;
 
