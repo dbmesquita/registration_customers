@@ -12,7 +12,7 @@ const Step1 = (props) => {
       <FormGroup>
         <div className="fields">
           <div className="field">
-            <input
+            <input className="inputLabel"
               type="text"
               placeholder="Razao Social ou Nome Completo"
               id="reason"
@@ -22,7 +22,7 @@ const Step1 = (props) => {
             />
           </div>
           <div className="field">
-            <input
+            <input className="inputLabel"
               type="text"
               placeholder="Nome Fantasia ou Apelido"
               id="fantasy"
@@ -32,7 +32,7 @@ const Step1 = (props) => {
             />
           </div>
           <div className="field">
-            <input
+            <input className="inputLabel"
               type="text"
               placeholder="Numero do cartao CNPJ ou CPF"
               id="cgc"
@@ -41,7 +41,7 @@ const Step1 = (props) => {
               value={props.cgc}
             />
             <span className="space"></span>
-            <input
+            <input className="inputLabel"
               type="text"
               placeholder="Numero da Inscrição Estadual ou RG"
               id="ie"
@@ -51,7 +51,7 @@ const Step1 = (props) => {
             />
           </div>
           <div className="field">
-            <input
+            <input className="inputLabel"
               type="text"
               placeholder="Telefone Comercial"
               id="commercial_phone"
@@ -60,7 +60,7 @@ const Step1 = (props) => {
               value={props.commercial_phone}
             />
             <span className="space"></span>
-            <input
+            <input className="inputLabel"
               type="text"
               placeholder="Celular Comercial"
               id="commercial_cell"
@@ -70,7 +70,7 @@ const Step1 = (props) => {
             />
           </div>
           <div className="field">
-            <input
+            <input className="inputLabel"
               type="email"
               placeholder="Digite seu E-mail"
               id="email"
@@ -79,17 +79,19 @@ const Step1 = (props) => {
               value={props.email}
             />
             <span className="space"></span>
-            <select
+            <select className="inputSelect"
               type="ramo"
               placeholder="Ramo de atividades"
               id="ramo"
               name="ramo"
-              onChange={props.handleInputChange} >
-              <option value="volvo">- Selecione uma Opção - </option>
-              <option value="volvo">Padaria</option>
-              <option value="saab">Comercio</option>
-              <option value="opel">Supermercado</option>
-              <option value="audi">Restaurante</option>
+              onChange={props.handleInputChange} required>
+              <optgroup label="- Selecione uma das Opções -">
+                <option value="" disabled selected hidden > ramo</option>
+                <option value="Padaria">Padaria</option>
+                <option value="Comercio">Comercio</option>
+                <option value="Supermercado">Supermercado</option>
+                <option value="Restaurante">Restaurante</option>
+              </optgroup>
             </select>
           </div>
         </div>

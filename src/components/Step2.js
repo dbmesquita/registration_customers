@@ -11,7 +11,7 @@ const Step2 = props => {
       <FormGroup>
         <div className="fields">
           <div className="field">
-            <input
+            <input className="inputLabel"
               type="text"
               placeholder="Digite aqui seu CEP"
               id="street_cep"
@@ -21,7 +21,7 @@ const Step2 = props => {
             />
           </div>
           <div className="field">
-            <input
+            <input className="inputLabel"
               type="text"
               placeholder="Rua"
               id="street"
@@ -30,7 +30,7 @@ const Step2 = props => {
               value={props.street}
             />
             <span className="space"></span>
-            <input
+            <input className="inputLabel"
               type="text"
               placeholder="Número"
               id="street_number"
@@ -40,7 +40,7 @@ const Step2 = props => {
             />
           </div>
           <div className="field">
-            <input
+            <input className="inputLabel"
               type="text"
               placeholder="Bairro"
               id="district"
@@ -49,7 +49,7 @@ const Step2 = props => {
               value={props.district}
             />
             <span className="space"></span>
-            <input
+            <input className="inputLabel"
               type="text"
               placeholder="Complemento"
               id="complement"
@@ -59,7 +59,7 @@ const Step2 = props => {
             />
           </div>
           <div className="field">
-            <input
+            <input className="inputLabel"
               type="text"
               placeholder="Cidade"
               id="city"
@@ -68,7 +68,7 @@ const Step2 = props => {
               value={props.city}
             />
             <span className="space"></span>
-            <input
+            <input className="inputLabel"
               type="text"
               placeholder="Estado"
               id="state"
@@ -78,8 +78,15 @@ const Step2 = props => {
             />
           </div>
           <div className="field" onChange={props.handleInputChange} value={props.own_building}>
-            <input type="radio" id="own_building" name="own_building" /> Sim
-            <input type="radio" id="own_building" name="own_building" /> Não
+            <div className="formRadio">
+              <span >Pronto proprio?</span>
+              <span className="space"></span>
+              <span className="space"></span>
+              <input className="inputRadio" type="radio" id="own_building" name="own_building" /> Sim
+              <span className="space"></span>
+              <input className="inputRadio" type="radio" id="own_building" name="own_building" /> Não
+            </div>
+
           </div>
         </div>
       </FormGroup>
