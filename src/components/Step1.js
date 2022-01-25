@@ -1,6 +1,7 @@
 import React from "react";
 import { FormGroup } from "reactstrap";
 
+
 const Step1 = (props) => {
   if (props.currentStep !== 1) {
     return null;
@@ -84,13 +85,13 @@ const Step1 = (props) => {
               id="ramo"
               name="ramo"
               onChange={props.handleInputChange} required>
-              <optgroup label="- Selecione uma das Opções -">
-                <option value="" disabled selected hidden >Ramo de atividades</option>
+
+                <option value="" disabled selected >Ramo de atividades</option>
                 <option value="Padaria">Padaria</option>
                 <option value="Comercio">Comercio</option>
                 <option value="Supermercado">Supermercado</option>
                 <option value="Restaurante">Restaurante</option>
-              </optgroup>
+
             </select>
           </div>
         </div>

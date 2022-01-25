@@ -53,13 +53,12 @@ body {
 
 }
 
-.inputSelect:invalid{
-  color: #ccc;
-}
-.inputSelect option{
-  color: black;
-}
+.inputSelect option:disabled{
+  color: #757575;
 
+
+  
+}
 
 .formRadio{
   width: 100%;

@@ -82,9 +82,9 @@ const Step2 = props => {
               <span >Pronto proprio?</span>
               <span className="space"></span>
               <span className="space"></span>
-              <input className="inputRadio" type="radio" id="own_building" name="own_building" /> Sim
+              <input className="inputRadio" type="radio" id="own_building" value="S" name="own_building" /> Sim
               <span className="space"></span>
-              <input className="inputRadio" type="radio" id="own_building" name="own_building" /> Não
+              <input className="inputRadio" type="radio" id="own_building" value="N" name="own_building" /> Não
             </div>
 
           </div>
