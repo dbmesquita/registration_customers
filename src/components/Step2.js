@@ -18,6 +18,7 @@ const Step2 = props => {
               name="street_cep"
               onChange={props.handleInputChange}
               value={props.street_cep}
+              required
             />
           </div>
           <div className="field">
@@ -28,6 +29,7 @@ const Step2 = props => {
               name="street"
               onChange={props.handleInputChange}
               value={props.street}
+              required
             />
             <span className="space"></span>
             <input className="inputLabel"
@@ -37,6 +39,7 @@ const Step2 = props => {
               name="street_number"
               onChange={props.handleInputChange}
               value={props.street_number}
+              required
             />
           </div>
           <div className="field">
@@ -47,6 +50,7 @@ const Step2 = props => {
               name="district"
               onChange={props.handleInputChange}
               value={props.district}
+              required
             />
             <span className="space"></span>
             <input className="inputLabel"
@@ -56,6 +60,7 @@ const Step2 = props => {
               name="complement"
               onChange={props.handleInputChange}
               value={props.complement}
+              required
             />
           </div>
           <div className="field">
@@ -66,6 +71,7 @@ const Step2 = props => {
               name="city"
               onChange={props.handleInputChange}
               value={props.city}
+              required
             />
             <span className="space"></span>
             <input className="inputLabel"
@@ -75,6 +81,7 @@ const Step2 = props => {
               name="state"
               onChange={props.handleInputChange}
               value={props.state}
+              required
             />
           </div>
           <div className="field" onChange={props.handleInputChange} value={props.own_building}>

@@ -30,6 +30,7 @@ const Step1 = (props) => {
               name="fantasy"
               onChange={props.handleInputChange}
               value={props.fantasy}
+              required
             />
           </div>
           <div className="field">
@@ -40,6 +41,7 @@ const Step1 = (props) => {
               name="cgc"
               onChange={props.handleInputChange}
               value={props.cgc}
+              required
             />
             <span className="space"></span>
             <input className="inputLabel"
@@ -49,6 +51,7 @@ const Step1 = (props) => {
               name="ie"
               onChange={props.handleInputChange}
               value={props.ie}
+              required
             />
           </div>
           <div className="field">
@@ -59,6 +62,7 @@ const Step1 = (props) => {
               name="commercial_phone"
               onChange={props.handleInputChange}
               value={props.commercial_phone}
+              required
             />
             <span className="space"></span>
             <input className="inputLabel"
@@ -68,6 +72,7 @@ const Step1 = (props) => {
               name="commercial_cell"
               onChange={props.handleInputChange}
               value={props.commercial_cell}
+              required
             />
           </div>
           <div className="field">
@@ -78,20 +83,22 @@ const Step1 = (props) => {
               name="email"
               onChange={props.handleInputChange}
               value={props.email}
+              required
             />
             <span className="space"></span>
             <select className="inputSelect"
               type="ramo"
               id="ramo"
               name="ramo"
-              onChange={props.handleInputChange} required>
-
-                <option value="" disabled selected >Ramo de atividades</option>
+              onChange={props.handleInputChange}
+              required>
+              <optgroup label="- Selecione uma das Opções -">
+                <option value='' disabled selected hidden >Ramo de atividades</option>
                 <option value="Padaria">Padaria</option>
                 <option value="Comercio">Comercio</option>
                 <option value="Supermercado">Supermercado</option>
                 <option value="Restaurante">Restaurante</option>
-
+              </optgroup>
             </select>
           </div>
         </div>
