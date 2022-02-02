@@ -27,8 +27,8 @@ const StepProgressBar = (props) => {
               {index + 1}
             </div>
             <div className="step-stage">
-              <div className={"stage"}>Informações</div>
-              <div className={"stage"}>Comerciais</div>
+              <div className={`stage ${accomplished ? "accomplished" : null}`}>Informações</div>
+              <div className={`stage ${accomplished ? "accomplished" : null}`}>Comerciais</div>
             </div>
           </>
         )}
@@ -42,8 +42,8 @@ const StepProgressBar = (props) => {
               {index + 1}
             </div>
             <div className="step-stage">
-              <div className={"stage"}>Endereço</div>
-              <div className={"stage"}>Comercial</div>
+              <div className={`stage ${accomplished ? "accomplished" : null}`}>Endereço</div>
+              <div className={`stage ${accomplished ? "accomplished" : null}`}>Comercial</div>
             </div>
           </>
         )}
@@ -57,7 +57,7 @@ const StepProgressBar = (props) => {
               {index + 1}
             </div>
             <div className="step-stage">
-              <div className={"stage"}>Anexos</div>
+              <div className={`stage ${accomplished ? "accomplished" : null}`}>Anexos</div>
             </div>
           </>
         )}

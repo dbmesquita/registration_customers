@@ -25,7 +25,7 @@ const Step1 = (props) => {
           <div className="field">
             <input className="inputLabel"
               type="text"
-              placeholder="Nome Fantasia ou Apelido"
+              placeholder="Fantasia ou Apelido"
               id="fantasy"
               name="fantasy"
               onChange={props.handleInputChange}
@@ -36,7 +36,7 @@ const Step1 = (props) => {
           <div className="field">
             <input className="inputLabel"
               type="text"
-              placeholder="Numero do cartao CNPJ ou CPF"
+              placeholder="CNPJ / CPF"
               id="cgc"
               name="cgc"
               onChange={props.handleInputChange}
@@ -46,7 +46,7 @@ const Step1 = (props) => {
             <span className="space"></span>
             <input className="inputLabel"
               type="text"
-              placeholder="Numero da Inscrição Estadual ou RG"
+              placeholder="I.E ou RG"
               id="ie"
               name="ie"
               onChange={props.handleInputChange}
@@ -57,7 +57,7 @@ const Step1 = (props) => {
           <div className="field">
             <input className="inputLabel"
               type="text"
-              placeholder="Telefone Comercial"
+              placeholder="Telefone"
               id="commercial_phone"
               name="commercial_phone"
               onChange={props.handleInputChange}
@@ -67,7 +67,7 @@ const Step1 = (props) => {
             <span className="space"></span>
             <input className="inputLabel"
               type="text"
-              placeholder="Celular Comercial"
+              placeholder="Celular"
               id="commercial_cell"
               name="commercial_cell"
               onChange={props.handleInputChange}
@@ -78,7 +78,7 @@ const Step1 = (props) => {
           <div className="field">
             <input className="inputLabel"
               type="email"
-              placeholder="Digite seu E-mail"
+              placeholder="E-mail"
               id="text"
               name="email"
               onChange={props.handleInputChange}
@@ -101,7 +101,6 @@ const Step1 = (props) => {
                 <option value="5">MAGAZINE</option>
                 <option value="6">DISTRIBUIDOR</option>
                 <option value="7">PESSOA FISICA</option>
-                <option value="8">FORNECEDORES DE MERCADORIA PARA REVENDA</option>
                 <option value="9">ACOUGUE</option>
                 <option value="10">LOJA DE CONVENIENCIA</option>
                 <option value="11">MOTEL</option>
@@ -124,7 +123,6 @@ const Step1 = (props) => {
                 <option value="28">PIT DOG</option>
                 <option value="29">BAR</option>
                 <option value="30">CHURRASQUINHO</option>
-                <option value="31">ABATEDOURO DE FRANGO</option>
                 <option value="32">FRUTEIRA</option>
                 <option value="33">DEPOSITO</option>
                 <option value="34">VENDA DE FRIOS</option>
@@ -133,14 +131,11 @@ const Step1 = (props) => {
                 <option value="37">MEIO A MEIO</option>
                 <option value="38">ACADEMIA</option>
                 <option value="39">FRIGORIFICO</option>
-                <option value="40">FUNCIONARIOS</option>
-                <option value="41">PRESTADOR DE SERVICOS</option>
                 <option value="42">PEIXARIA</option>
                 <option value="43">ESCOLA</option>
                 <option value="44">PET SHOP</option>
                 <option value="45">CLINICA DE ESTETICA</option>
                 <option value="46">AEROPORTO</option>
-                <option value="47">SEGURANÇA E ORDEM PUBLICA</option>
                 <option value="48">ORGÃOS RELIGOSOS</option>
                 <option value="49">LIVRARIA</option>
               </optgroup>

@@ -5,7 +5,7 @@
 }
 
 body {
-  background: #f1f1f1;
+  background: #004293;
 }
 
 .App {
@@ -30,7 +30,7 @@ body {
   display: block;
   margin: 0 auto;
   border-radius: 18px;
-  box-shadow: 8px 8px 24px #ccc;
+
   width: 80%;
   position: relative;
   overflow: hidden;

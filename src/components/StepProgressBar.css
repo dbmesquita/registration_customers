@@ -25,10 +25,16 @@
     position: absolute;
   }
   .stage {
-    color: #004293;
+    color: white;
+    opacity: 0.0;
     font-weight: bold;
     white-space: nowrap;
     font-family: 'Museo 700';
-    
+  }
+
+  .stage.accomplished{
+    color: #004293;
+    opacity: 1.0;
+
   }
   
