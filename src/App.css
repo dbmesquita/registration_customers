@@ -87,7 +87,7 @@ body {
 
 .inputSelect:focus{
   outline: none;
-  border-color: #0077FF;
+  border-color: #004293;
 
 }
 .inputSelect:required:valid {

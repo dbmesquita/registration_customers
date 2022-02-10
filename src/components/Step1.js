@@ -36,7 +36,7 @@ const Step1 = (props) => {
           <div className="field">
             <input className="inputLabel"
               type="text"
-              placeholder="CNPJ / CPF"
+              placeholder="CNPJ ou CPF"
               id="cgc"
               name="cgc"
               onChange={props.handleInputChange}
@@ -92,8 +92,8 @@ const Step1 = (props) => {
               name="ramo"
               onChange={props.handleInputChange}
               required>
-              <optgroup label="- Selecione uma das Opções -">
                 <option value="" disabled selected hidden >Ramo de atividades</option>
+                <option value="" disabled>- Selecione uma das Opções Abaixo -</option>
                 <option value="1">SUPERMERCADO</option>
                 <option value="2">ARMAZEM</option>
                 <option value="3">MERCEARIA</option>
@@ -138,7 +138,6 @@ const Step1 = (props) => {
                 <option value="46">AEROPORTO</option>
                 <option value="48">ORGÃOS RELIGOSOS</option>
                 <option value="49">LIVRARIA</option>
-              </optgroup>
             </select>
           </div>
         </div>
