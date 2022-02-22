@@ -5,6 +5,8 @@ import Step1 from "./components/Step1";
 import Step2 from "./components/Step2";
 import Step3 from "./components/Step3";
 import StepProgressBar from "./components/StepProgressBar";
+import Fribel from "./assets/FRIBEL_SVG.svg";
+import Farias from "./assets/FARIAS_SVG.svg";
 
 class App extends Component {
   constructor(props) {
@@ -71,7 +73,7 @@ class App extends Component {
       currentStep: currentStep
     });
   }
-  
+
 
   // Funções para botons avançar e voltar
   get previousButton() {
@@ -117,49 +119,60 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <div className="form-head">
-        <h1 className="head">Formulário de Cadastro</h1>
-        </div>
-        <p className="step-guide"></p>
-        <form className="form">
-          <div className="fields-container">
-            <div className="field-step">
-              <StepProgressBar currentStep={this.state.currentStep} />
-            </div>
-            <Step1
-              currentStep={this.state.currentStep}
-              handleChange={this.handleChange}
-              reason={this.state.reason}
-              next={this._next}
-            />
-            <Step2
-              currentStep={this.state.currentStep}
-              handleChange={this.handleChange}
-              street_cep={this.state.street_cep}
-              street={this.state.street}
-              street_number={this.state.street_number}
-              district={this.state.district}
-              complement={this.state.complement}
-              city={this.state.city}
-              state={this.state.state}
-              own_building={this.state.own_building}
-            />
-            <Step3
-              currentStep={this.state.currentStep}
-              handleChange={this.handleChange}
-              commercial_phone={this.state.commercial_phone}
-              commercial_cell={this.state.commercial_cell}
-              email={this.state.email}
-            />
-            <div className="button-container">
-              {this.previousButton}
-              {this.nextButton}
-              {this.submitButton}
+      <body>
+        <div className="App">
+          <div class="container">
+            <div class="wrap">
+              <div class="form-logo" data-tilt>
+              <img src={Fribel} alt='Fribel' className='logo' />
+              <img src={Farias} alt='Farias' className='logo' />
+              </div>
+              <form className="form">
+                <div className="form-head">
+                  <h1 className="head">Formulário de Cadastro</h1>
+                </div>
+                <p className="step-guide"></p>
+                <div className="fields-container">
+                  <div className="field-step">
+                    <StepProgressBar currentStep={this.state.currentStep} />
+                  </div>
+                  <Step1
+                    currentStep={this.state.currentStep}
+                    handleChange={this.handleChange}
+                    reason={this.state.reason}
+                    next={this._next}
+                  />
+                  <Step2
+                    currentStep={this.state.currentStep}
+                    handleChange={this.handleChange}
+                    street_cep={this.state.street_cep}
+                    street={this.state.street}
+                    street_number={this.state.street_number}
+                    district={this.state.district}
+                    complement={this.state.complement}
+                    city={this.state.city}
+                    state={this.state.state}
+                    own_building={this.state.own_building}
+                  />
+                  <Step3
+                    currentStep={this.state.currentStep}
+                    handleChange={this.handleChange}
+                    commercial_phone={this.state.commercial_phone}
+                    commercial_cell={this.state.commercial_cell}
+                    email={this.state.email}
+                  />
+                  <div className="button-container">
+                    {this.previousButton}
+                    {this.nextButton}
+                    {this.submitButton}
+                    <span class="focus-button"></span>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
-        </form>
-      </div>
+        </div>
+      </body>
     );
   }
 }

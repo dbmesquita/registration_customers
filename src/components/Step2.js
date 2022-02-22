@@ -86,7 +86,7 @@ const Step2 = props => {
           </div>
           <div className="field" onChange={props.handleInputChange} value={props.own_building}>
             <div className="formRadio">
-              <span >Pronto proprio?</span>
+              <span className="formRadio">Pronto proprio?</span>
               <span className="space"></span>
               <span className="space"></span>
               <input className="inputRadio" type="radio" id="own_building" value="S" name="own_building" /> Sim
