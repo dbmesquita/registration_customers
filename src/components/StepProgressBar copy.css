@@ -6,19 +6,16 @@
   display: table;
   table-layout: fixed;
   width: 100%;
-  color: #004293;
-
-
+  color: #6b6b6b;
+  height: 4rem;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
 .steps > .step {
   position: relative;
   display: table-cell;
   text-align: center;
-  font-family: Poppins-Regular;
-  font-weight: bold;
-  font-size: 15px;
-  font-size: 15px !important;
   font-size: 1rem !important;
+  font-size: 12px !important;
 }
 .steps > .step:before {
   content: attr(data-step);
@@ -54,18 +51,18 @@
 }
 .steps > .step.is-complete:before {
   content: "✓";
-  color: #004293;
+  color: #6fcc74;
   background: #ffffff;
-  border: 1.5px solid #2D9A2E;
+  border: 1.5px dashed #6fcc74;
 }
 .steps > .step.is-complete:after {
-  border-bottom: 3px solid #2D9A2E;
+  border-bottom: 3px dashed #6fcc74;
 }
 .steps > .step.is-active {
   font-size: 1.5rem;
 }
 .steps > .step.is-active:before {
   color: #fff;
-  border: 1.5px dashed #2D9A2E;
-  background: #2D9A2E;
+  border: 1.5px dashed #6fcc74;
+  background: #6fcc74;
 }

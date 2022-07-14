@@ -92,8 +92,8 @@ const Step1 = (props) => {
               name="ramo"
               onChange={props.handleInputChange}
               required>
-              <option value="" disabled selected hidden >Ramo de atividades</option>
-              <option value="" disabled>- Selecione uma das Opções Abaixo -</option>
+              <option value="" disabled > - Selecione uma das Opções Abaixo - </option>
+              <option value="" hidden >Ramo de atividades</option>
               <option value="1">SUPERMERCADO</option>
               <option value="2">ARMAZEM</option>
               <option value="3">MERCEARIA</option>

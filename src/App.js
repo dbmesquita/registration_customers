@@ -52,17 +52,21 @@ class App extends Component {
   }
 
 
+
+
   // _next and _previous functions will be called on button click
   _next(value) {
-    console.log("hii", value);
+    //console.log("hii", value);
     let currentStep = this.state.currentStep;
     //let indexStep= this.state.index;
-    console.log("hello");
+    //console.log(currentStep);
     // If the current step is 1 or 2, then add one on "next" button click
     currentStep = currentStep >= 2 ? 3 : currentStep + 1;
     this.setState({
       currentStep: currentStep
     });
+
+    //console.log(currentStep);
   }
 
   _prev() {
@@ -101,6 +105,7 @@ class App extends Component {
           Avançar
         </Button>
       );
+
     }
     // ...não exibi nada
     return null;
@@ -114,18 +119,19 @@ class App extends Component {
       return <Button className="button" color="primary float-right">Enviar</Button>;
     }
     // ...não exibi nada
+
     return null;
   }
 
   render() {
     return (
-      <body>
+
         <div className="App">
-          <div class="container">
-            <div class="wrap">
-              <div class="form-logo" data-tilt>
-              <img src={Fribel} alt='Fribel' className='logo' />
-              <img src={Farias} alt='Farias' className='logo' />
+          <div className="container">
+            <div className="wrap">
+              <div className="form-logo" data-tilt>
+                <img src={Fribel} alt='Fribel' className='logo' />
+                <img src={Farias} alt='Farias' className='logo' />
               </div>
               <form className="form">
                 <div className="form-head">
@@ -138,41 +144,26 @@ class App extends Component {
                   </div>
                   <Step1
                     currentStep={this.state.currentStep}
-                    handleChange={this.handleChange}
-                    reason={this.state.reason}
-                    next={this._next}
                   />
                   <Step2
                     currentStep={this.state.currentStep}
-                    handleChange={this.handleChange}
-                    street_cep={this.state.street_cep}
-                    street={this.state.street}
-                    street_number={this.state.street_number}
-                    district={this.state.district}
-                    complement={this.state.complement}
-                    city={this.state.city}
-                    state={this.state.state}
-                    own_building={this.state.own_building}
+
                   />
                   <Step3
                     currentStep={this.state.currentStep}
-                    handleChange={this.handleChange}
-                    commercial_phone={this.state.commercial_phone}
-                    commercial_cell={this.state.commercial_cell}
-                    email={this.state.email}
                   />
                   <div className="button-container">
-                    {this.previousButton}
                     {this.nextButton}
                     {this.submitButton}
-                    <span class="focus-button"></span>
+                    {this.previousButton}
+                    <span className="focus-button"></span>
                   </div>
                 </div>
               </form>
             </div>
           </div>
         </div>
-      </body>
+  
     );
   }
 }
