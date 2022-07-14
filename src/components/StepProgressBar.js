@@ -50,7 +50,7 @@ function StepProgressBar(props) {
       </>
     );
   }
-
+console.log()
   function Step(props) {
     console.log(props)
     return (
