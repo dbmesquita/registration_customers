@@ -21,8 +21,6 @@ function StepProgressBar(props) {
     if (current < 3)
       setCurrent(current + 1);
   };*/
-
-
  
   function Steps(props) {
   
