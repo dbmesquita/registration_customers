@@ -127,11 +127,22 @@ class App extends Component {
     return (
 
         <div className="App">
+          <nav className="nav">
+            <div className="nav-container nav-flex">
+            <img src={Fribel} alt='Fribel'/>
+              <div className="links">
+                <a>Página Inicial</a>
+                <a>Produtos</a>
+                <a>Liderança</a>
+                <a>Trabalhe Conosco</a>
+                <a>Sobre</a>
+              </div>
+            </div>
+          </nav>
           <div className="container">
             <div className="wrap">
               <div className="form-logo" data-tilt>
                 <img src={Fribel} alt='Fribel' className='logo' />
-                <img src={Farias} alt='Farias' className='logo' />
               </div>
               <form className="form">
                 <div className="form-head">
