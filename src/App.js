@@ -5,8 +5,6 @@ import Step1 from "./components/Step1";
 import Step2 from "./components/Step2";
 import Step3 from "./components/Step3";
 import StepProgressBar from "./components/StepProgressBar";
-import Fribel from "./assets/FRIBEL_SVG.svg";
-import Farias from "./assets/FARIAS_SVG.svg";
 
 class App extends Component {
   constructor(props) {
@@ -125,25 +123,9 @@ class App extends Component {
 
   render() {
     return (
-
         <div className="App">
-          <nav className="nav">
-            <div className="nav-container nav-flex">
-            <img src={Fribel} alt='Fribel'/>
-              <div className="links">
-                <a>Página Inicial</a>
-                <a>Produtos</a>
-                <a>Liderança</a>
-                <a>Trabalhe Conosco</a>
-                <a>Sobre</a>
-              </div>
-            </div>
-          </nav>
           <div className="container">
             <div className="wrap">
-              <div className="form-logo" data-tilt>
-                <img src={Fribel} alt='Fribel' className='logo' />
-              </div>
               <form className="form">
                 <div className="form-head">
                   <h1 className="head">Formulário de Cadastro</h1>

@@ -18,9 +18,9 @@ const Step1 = (props) => {
               placeholder="Razao Social ou Nome Completo"
               id="reason"
               name="reason"
-              onChange={props.handleInputChange}
-              value={props.reason}
+              autocomplete="off"
             />
+            <label class="label" for="reason">Razao Social ou Nome Completo</label>
           </div>
           <div className="field">
             <input className="inputLabel"
@@ -28,10 +28,8 @@ const Step1 = (props) => {
               placeholder="Fantasia ou Apelido"
               id="fantasy"
               name="fantasy"
-              onChange={props.handleInputChange}
-              value={props.fantasy}
-              required
             />
+            <label class="label" for="fantasy">Fantasia ou Apelido</label>
           </div>
           <div className="field">
             <input className="inputLabel"
@@ -39,12 +37,10 @@ const Step1 = (props) => {
               placeholder="CNPJ ou CPF"
               id="cgc"
               name="cgc"
-              onChange={props.handleInputChange}
-              value={props.cgc}
-              required
             />
+            <label class="label" for="cgc">CNPJ ou CPF</label>
             <span className="space"></span>
-            <input className="inputLabel"
+            <input className="inputLabel dir"
               type="text"
               placeholder="I.E ou RG"
               id="ie"
@@ -53,6 +49,7 @@ const Step1 = (props) => {
               value={props.ie}
               required
             />
+            <label class="label dir" for="ie">I.E ou RG</label>
           </div>
           <div className="field">
             <input className="inputLabel"
@@ -64,8 +61,9 @@ const Step1 = (props) => {
               value={props.commercial_phone}
               required
             />
+            <label class="label" for="commercial_phone">Telefone</label>
             <span className="space"></span>
-            <input className="inputLabel"
+            <input className="inputLabel dir"
               type="text"
               placeholder="Celular"
               id="commercial_cell"
@@ -74,6 +72,7 @@ const Step1 = (props) => {
               value={props.commercial_cell}
               required
             />
+            <label class="label dir" for="commercial_cell">Celular</label>
           </div>
           <div className="field">
             <input className="inputLabel"
@@ -85,6 +84,7 @@ const Step1 = (props) => {
               value={props.email}
               required
             />
+            <label class="label" for="email">E-mail</label>
             <span className="space"></span>
             <select className="inputSelect"
               type="ramo"
